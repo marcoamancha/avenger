@@ -7,7 +7,7 @@ importScripts('js/sw-utils.js');
  const INMUTABLE_CACHE = 'inmutable-v1';
 
  const APP_SHELL = [
-     // '/',
+     '/',
      'css/style.css',
      'img/favicon.ico',
      'img/avatars/hulk.jpg',
