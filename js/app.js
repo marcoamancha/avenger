@@ -1,15 +1,19 @@
 
-//validacion
 var url = window.location.href;
 var swLocation = '/avenger/sw.js';
 
-// Registrando Service worker
-if(navigator.serviceWorker){
-    if(url.includes('localhost')){
+
+if ( navigator.serviceWorker ) {
+
+
+    if ( url.includes('localhost') ) {
         swLocation = '/sw.js';
     }
-    navigator.serviceWorker.register(swLocation);
+
+
+    navigator.serviceWorker.register( swLocation );
 }
+
 // Referencias de jQuery
 
 var titulo      = $('#titulo');
